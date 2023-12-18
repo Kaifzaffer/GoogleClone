@@ -5,7 +5,7 @@ A simple Google search homepage clone built with React with search functionality
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/google-search-clone.git`
+1. Clone the repository: `git clone https://github.com/Kaifzaffer/GoogleClone.git`
 2. Navigate to the project directory: `cd Google-Clone`
 3. Install dependencies: `npm install`
 4. Run the app: `npm start`
