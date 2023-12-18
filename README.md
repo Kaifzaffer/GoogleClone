@@ -1,6 +1,6 @@
 # Google Search Clone
 
-A simple Google search homepage clone built with React with search functionality.
+A simple Google search homepage clone built with React with search functionality with Google Custom Search Api.
 
 
 ## Installation
