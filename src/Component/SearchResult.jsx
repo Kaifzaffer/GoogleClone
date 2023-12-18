@@ -15,12 +15,6 @@ const SearchResults = ({ results,onSearch }) => {
     }
   };
 
-  const handleSearch = () => {
-    onSearch(query);
-  };
-
-
-  console.log(results);
   return (
     <div className="search-results">
       <div className="flex flex-row items-center">
