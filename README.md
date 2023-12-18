@@ -37,8 +37,10 @@ A simple Google search homepage clone built with React with search functionality
 
 ## Screenshots
 
-![Screenshot 1](/screenshots/screenshot1.png)
-![Screenshot 2](/screenshots/screenshot2.png)
+![Screenshot 1](https://drive.google.com/uc?id=1i0yDiQQCKfqHOOgu5V_9sptyXbtWJbRr)
+![Screenshot 2](https://drive.google.com/uc?id=1unFtD8CaS4wVC45s7rpQiZ8L1_7GM9NQ)
+![Screenshot 2](https://drive.google.com/uc?id=12FMHAMFU94j8ZdOJLu7_2eW1Fd-ZwFu1)
+
 
 ## Contributing
 
