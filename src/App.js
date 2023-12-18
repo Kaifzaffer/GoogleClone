@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import axios from 'axios';
+import SearchBar from './Component/SearchBar';
+import SearchResults from './Component/SearchResult';
+import API_KEY from './Api_Key';
 
-function App() {
+const context_key = "9374067ada31d47a3";
+
+const App = () => {
+  const [results, setResults] = useState(null);
+
+
+  const handleSearch = async (query) => {
+    try {
+      const response = await axios.get(
+        `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${context_key}&q=${query}`
+      );
+      console.log(response);
+      setResults(response.data.items);
+    } catch (error) {
+      console.error('Error fetching search results', error);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <div className="App">
+
+        {results?(<SearchResults onSearch={handleSearch} results={results} />):(<div className="h-screen flex justify-center items-center">
+            <SearchBar onSearch={handleSearch} />
+        </div>)}
+        
+         
+      </div>
+    
   );
-}
+};
 
 export default App;
