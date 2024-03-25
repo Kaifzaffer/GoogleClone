@@ -1,6 +1,7 @@
-// src/components/SearchBar.js
 import React, { useState } from "react";
 import googleImage from "../image/google_image.png";
+
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit perferendis culpa quas voluptates incidunt, consectetur suscipit aliquam odio! Dolorum nesciunt enim tempore dignissimos consequuntur iste quod accusantium porro sint, sapiente quam ea reprehenderit sunt, atque autem molestiae. Fuga quisquam quam provident, ad deleniti sunt quasi quos rerum quis, odit quo harum quidem iure hic assumenda adipisci obcaecati molestiae ut, expedita repellendus accusantium esse aspernatur minus! Aperiam sint commodi dolorem iste iusto, deleniti officia quam facilis illum iure.
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
@@ -21,7 +22,11 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="search-bar">
-      <img src={googleImage} alt="404" className="mx-auto mb-2.5 w-48 sm:w-32 md:w-40 lg:w-64" />
+      <img
+        src={googleImage}
+        alt="404"
+        className="mx-auto mb-2.5 w-48 sm:w-32 md:w-40 lg:w-64"
+      />
       <div className="flex flex-col">
         <input
           type="text"
